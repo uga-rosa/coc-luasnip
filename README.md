@@ -1,18 +1,8 @@
 # coc-luasnip
 
+LuaSnip completion plugin for [coc.nvim](https://github.com/neoclide/coc.nvim)
 
-
-## Install
-
-`:CocInstall coc-luasnip`
-
-## Keymaps
-
-`nmap <silent> <C-l> <Plug>(coc-coc-luasnip-keymap)`
-
-## Lists
-
-`:CocList demo_list`
+It's incomplete. I'm looking for maintainers or contribution.
 
 ## License
 
