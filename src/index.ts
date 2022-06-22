@@ -2,7 +2,7 @@ import {VimCompleteItem, ExtensionContext, sources, workspace} from 'coc.nvim';
 
 const {nvim} = workspace
 
-export async function activate(context: ExtensionContext): Promise<void> {
+export const activate = (context: ExtensionContext) => {
     context.subscriptions.push(
         sources.createSource({
             name: 'coc-luasnip',

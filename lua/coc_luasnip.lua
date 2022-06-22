@@ -22,7 +22,6 @@ function M.getCompletionItems()
                             word = snip.trigger,
                             menu = "[LuaSnip]",
                             info = M.getDocument(snip, ft),
-                            isSnippet = true,
                         })
                     end
                 end
