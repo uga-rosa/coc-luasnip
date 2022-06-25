@@ -8,14 +8,16 @@ function M.getSnippets(ft)
 
     local ret = {}
     for _, snip in ipairs(snippets) do
-        table.insert(ret, {
-            trigger = snip.trigger,
-            name = snip.name,
-            id = snip.id,
-            dscr = snip.dscr,
-            hidden = snip.hidden,
-            docstring = snip:get_docstring()
-        })
+        if not snip.hidden then
+            table.insert(ret, {
+                trigger = snip.trigger,
+                name = snip.name,
+                id = snip.id,
+                dscr = snip.dscr,
+                docstring = snip:get_docstring(),
+                ft = ft,
+            })
+        end
     end
 
     return ret
